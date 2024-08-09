@@ -35,3 +35,22 @@ const navSlide = () => {
 	}
 
 window.onload = () => navSlide();
+
+// Smooth scrolling for navigation links
+$('a.nav-link').on('click', function (event) {
+  if (this.hash !== "") {
+    event.preventDefault();
+
+    const hash = this.hash;
+
+    $('html, body').animate(
+      {
+        scrollTop: $(hash).offset().top,
+      },
+      800, // Adjust the scroll speed as needed (in milliseconds)
+      function () {
+        window.location.hash = hash;
+      }
+    );
+  }
+});

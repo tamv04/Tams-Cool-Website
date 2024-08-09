@@ -3,12 +3,42 @@
   <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width">
-      <title>Portfolio site template</title>
       <link href="style.css" rel="stylesheet" type="text/css" />
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
-      <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Repl.it_logo.svg/220px-Repl.it_logo.png">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     
+  
+<!--────ICON CAN BE CHANGED HERE──────-->
+    
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ </script>
       <script src="script.js"></script>
+     <link rel = "icon" href = 
+"https://cdn3.iconfinder.com/data/icons/education-62/128/easel-512.png" type = "image/x-icon">
+
+    
+<script>
+$(document).ready(function () {
+  // Smooth scrolling for navigation links
+  $('a.nav-link').on('click', function (event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+
+      const hash = this.hash;
+
+      $('html, body').animate(
+        {
+          scrollTop: $(hash).offset().top,
+        },
+        700, // Adjust the scroll speed as needed (in milliseconds)
+        function () {
+          window.location.hash = hash;
+        }
+      );
+    }
+  });
+});
+</script>
+    
   </head>
     <body>
 	  
@@ -16,14 +46,24 @@
 	  
 		<!--────────────────Header───────────────-->
 	<header>
-		<a class="logo" href="#home">
-              <img src="https://newsletter-images--timmy-i-chen.repl.co/logo-light.png" alt="repl logo" />
+ <style>
+  .logo img {
+    width: 90px; /* Adjust the width as needed */
+    height: 60px; /* Adjust the height as needed */
+    margin-top: -5px; /* Add margin to the top to move the image down */
+  }
+</style>
+
+
 		</a>
 		<nav>	
 		 <ul class="nav-bar"><div class="bg"></div>
 			<li><a class="nav-link active" href="#home">Home</a></li>
 			<li><a class="nav-link" href="#projects">Projects</a></li>
 			<li><a class="nav-link" href="#contact">Contact</a></li>
+      <li><a class="nav-link" href="#FunFacts">Fun Facts</a></li>
+
+       
 		 </ul>
 			
 			<div class="hamburger">
@@ -38,83 +78,128 @@
 	  <div id="home">
 		 <div class="filter"></div>
 		 <section class="intro">
-		  <h3>Your Name.<hr></h3>
-		  <p>Short Description.</p>
-		  <p>Something more about yourself.</p>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-			  
+     <img src="https://media.licdn.com/dms/image/D5603AQEwX0VB61LKbw/profile-displayphoto-shrink_800_800/0/1698654736898?e=1728518400&v=beta&t=p9EKOT7Yd_d7gHSHjFmUrAAShLcpqtIp9nPrvebIDsE" alt="ME PIC" width="300" height="300" style="border: 3px solid #000; margin-top: 95px;">
+
+	<h3 style="margin-bottom: -5px;">✧･ﾟWelcome! My name is Tam Vo! ✧･ﾟ<hr></h3>
+<p style="margin-top: -5px;">I'm a rising 3rd year student at UCLA, majoring in Computer Science and Cognitive Science and Linguistics with a minor in Data Science Engineering. I am a aspiring Product Manager with an interest in using technology to drive positive change in underserved communities and marginalized groups.</p>
+
+       
 		  <!--────social media links─────-->
 			 
 		  <div class="social-media">
-			  <a href="#" target="_blank"><i class='fab fa-codepen'></i></a>
-			  <a href="#" target="_blank"><i class='fab fa-twitter'></i></a>
-			  <a href="#" target="_blank"><i class='fab fa-github'></i></a>
-			  <a href="#" target="_blank"><i class='fab fa-linkedin-in'></i></a>
-			  <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+			  <a href="https://www.instagram.com/tamm.cx/" target="_blank"><i class='fab fa-instagram'></i></a>
+			  <a href="https://github.com/tamv04" target="_blank"><i class='fab fa-github'></i></a>
+			 <a href="https://www.linkedin.com/in/tamvo2026" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+
 		    </div>
 			 
 		 </section> 
 	  </div>  
-		
 	  <!--───────────────Projects───────────────-->
+    <style>
+  /* Add margin-top to move the "Projects" section down */
+  #projects {
+    margin-top: 50px; /* Adjust the positive margin as needed */
+  }
+</style>
 	  <div id="projects"> 
-		 <h3>My Projects.<hr></h3>
-		  <p>Here are some of my projects, you may like.</p>
+		 <h3>Projects<hr></h3>
+		  <p>Here are some of my projects on some mini games and website I've constructed</p>
 		  <div class="work-box">
 		  <div class="work">
 		<!--───────────────card───────────────-->
 			<div class="card">
-			    <img class="work-img" src="https://images.unsplash.com/photo-1518611507436-f9221403cca2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1225&q=80">
-			    <a href="" target="_blank"> <!--Link to project-->
-				<div class="work-content">Lorem ipsum dolor sit amet consectetur.</div></a>
+			    <img class="work-img" src="https://user-images.githubusercontent.com/32945767/44846667-dd27ff00-ac05-11e8-9c2c-5e12cbafbe40.png">
+			    <a href="https://github.com/tamv04/TunnelManGame" target="https://github.com/tamv04/TunnelManGame"> <!--Link to project-->
+				<div class="work-content"> TunnelMan Game</div></a>
             </div>
 			<div class="card">
-			    <img class="work-img" src="https://images.unsplash.com/photo-1462642109801-4ac2971a3a51?ixlib=rb-1.2.1&auto=format&fit=crop&w=1266&q=80">
-				<a href="" target="_blank"> <!--Link to project-->
-				<div class="work-content">Lorem ipsum dolor sit amet consectetur.</div></a>
+			    <img class="work-img" src="https://www.shutterstock.com/shutterstock/photos/1932264230/display_1500/stock-photo-cricket-batsmen-poised-for-playing-1932264230.jpg">
+				<a href="https://github.com/tamv04/CricketTeam/tree/main" target="_blank"> <!--Link to project-->
+				<div class="work-content">Cricket Team</div></a>
             </div>
             <div class="card">
-			    <img class="work-img" src="https://images.unsplash.com/photo-1485815457792-d1a966f9bde0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
-				<a href="" target="_blank"> <!--Link to project-->
-				<div class="work-content">Lorem ipsum dolor sit amet consectetur.</div></a>
+			    <img class="work-img" src="https://images.squarespace-cdn.com/content/v1/647863710ebec7148b64e18d/12736776-48b3-4d02-a5db-1672ef8a5c69/LAFPC+SOLID+COLOR+Logo.png">
+				<a href="https://gfla-test.web.app/" target=""> <!--Link to project-->
+				<div class="work-content"> Created a platform to help users in LA county locate healthy groceries</div></a>
             </div>
             <div class="card">
-			    <img class="work-img" src="https://images.unsplash.com/photo-1517842645767-c639042777db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
-				<a href="" target="_blank"> <!--Link to project-->
-				<div class="work-content">Lorem ipsum dolor sit amet consectetur.</div></a>
+			    <img class="work-img" src="https://favtutor.com/resources/images/uploads/Anagram_python_project.webp">
+				<a href="https://github.com/tamv04/anagrams" target="https://github.com/tamv04/anagrams"> <!--Link to project-->
+				<div class="work-content">Created an Anagrams Game using recursion</div></a>
             </div> 
 			<div class="card">
-			    <img class="work-img" src="https://images.unsplash.com/photo-1535556116002-6281ff3e9f36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=781&q=80">
-				<a href="" target="_blank"> <!--Link to project-->
-				<div class="work-content">Lorem ipsum dolor sit amet consectetur.</div></a>
+			    <img class="work-img" src="https://as1.ftcdn.net/v2/jpg/03/45/28/22/1000_F_345282224_4kGUpnKedPQT5cxh0C2Abgaka7skYwMT.jpg">
+				<a href="https://docs.google.com/document/d/1faDsIlckwpfS8TBYp7JF4_OBOLEE382rA-DtPP38zGU/edit" target="https://docs.google.com/document/d/1faDsIlckwpfS8TBYp7JF4_OBOLEE382rA-DtPP38zGU/edit"> <!--Link to project-->
+				<div class="work-content"> Instagram Design Posts</div>
+        </a>
             </div>
 			<div class="card">
-			    <img class="work-img" src="https://images.unsplash.com/photo-1483546416237-76fd26bbcdd1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
-				<a href="" target="_blank"> <!--Link to project-->
-				<div class="work-content">Lorem ipsum dolor sit amet consectetur.</div></a>
+			    <img class="work-img" src="https://i.ytimg.com/vi/Px8dgjKeh5I/maxresdefault.jpg">
+				<a href="https://github.com/tamv04/RecursionGame" target="https://github.com/tamv04/RecursionGame"> <!--Link to project-->
+				<div class="work-content">Created mini functions using Recursion!</div></a>
             </div> 	  
 		  </div>
 		  </div>
 	  </div>
-		 
-		<!--──────────────Contact────────────────-->
-	  <div id="contact">
-		  <!--────social media links─────-->
-		   <h3>Contact.<hr></h3>
-		   <p>Feel free to contact me on my social media.</p>
-		    <div class="social-media">
-			  <a href="#" target="_blank"><i class='fab fa-codepen'></i></a>
-			  <a href="#" target="_blank"><i class='fab fa-twitter'></i></a>
-			  <a href="#" target="_blank"><i class='fab fa-github'></i></a>
-			  <a href="#" target="_blank"><i class='fab fa-linkedin-in'></i></a>
-			  <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
-		    </div>
-		  </div>
-
 	</main>
-	  <footer class="copyright">© 2020 
-		  <a href="#" target="_blank"> Lilykhan.</a>
-     </footer>
+
+    <style>
+  .song-area {
+    background-color: #FFE4E1;
+    text-align: center; /* Center-align the text content */
+  }
+
+  .song-area iframe {
+    display: block;
+    margin: 0 auto; /* Center-align the iframes horizontally */
+  }
+</style>
+
+<!--Where the songs/ FunFacts go-->
+<div id="FunFacts" style="font-family: 'fantasy';">
+<div class="song-area">
+  <div class="wrapper">
+    <br>
+    <h1></h1>
+    <h3 class="smaller-font">Fun facts about me</h3>
+
+    <br>
+    
+<!-- Fun Facts -->
+<div id="FunFacts" style="font-family: roman ;font-size: 18px;">
+  <div class="fun-facts-container">
+    <div class="fun-fact">
+      <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/453169267_471944125630990_1546473514084887365_n.jpg?stp=dst-jpg_p180x540&_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_ohc=WU_q5QOYAW0Q7kNvgF-qlit&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QGtbWPpJp8MAXpOvar703w4hCJuwP6kJF1Mnw6g6tjqIA&oe=66DC9AD9" alt="Fun Fact 1">
+      <p> I am a cat owner</p>
+    </div>
+    <div class="fun-fact">
+      <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/453381329_3200960570036488_2802241557874888795_n.jpg?stp=dst-jpg_s403x403&_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_ohc=QF5jkZdfDHYQ7kNvgGKAS2j&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QHaUzPaKQnOsrZui1ztReyuSP7rivCU_1BVKzlA0FRdzQ&oe=66DC9BC1" alt="Fun Fact 2">
+      <p>I play badminton on the UCLA Badminton Team</p>
+    </div>
+    <div class="fun-fact">
+      <img src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.15752-9/453743820_1852654041910335_7128426026810202578_n.jpg?stp=dst-jpg_s403x403&_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_ohc=bchDI9CAi2oQ7kNvgErZxDp&_nc_ht=scontent-lax3-2.xx&oh=03_Q7cD1QGJvSohaECC5n-RusTyI39yQVeQ2f03HzwVB3X4fgEdrg&oe=66DCB098">
+      <p>I have food review account on Instagram</p>
+    </div>
+  </div>
+</div>
+
+<br>
+
+  
+<!-- Contact -->
+<div id="contact" style="background-color: #FFE4E1;">
+  <!-- Social media links -->
+  <h3>Contact Me!╰┈➤📲<hr></h3>
+  <p>ෆ Feel free to connect with me on my social media.
+  My personal email is tamv040404@gmail.com and my school one is tamv04@g.ucla.edu below are links to my personal Github, Linkedin and Instagram ෆ
+  </p>
+  <div class="social-media">
+    <a href="https://github.com/tamv04" target="_blank"><i class='fab fa-github'></i></a>
+    <a href="https://www.linkedin.com/in/tamvo2026" target="_blank"><i class='fab fa-linkedin-in'></i></a>
+    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+  </div>
+</div>
 	  
   </div>
   </body>
