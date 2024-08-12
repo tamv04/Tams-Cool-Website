@@ -426,7 +426,7 @@ hr {
 /* CSS for Fun Facts section */
 #FunFacts {
 	text-align: center; /* Center-align the content */
-	padding: 5px;
+	padding: -1px;
   }
   
   /* CSS for individual fun facts */
@@ -435,7 +435,7 @@ hr {
 	justify-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;
-	gap: 1px;
+	gap: 0px;
   }
   
   .fun-fact {
