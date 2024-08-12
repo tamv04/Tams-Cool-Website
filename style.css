@@ -170,8 +170,8 @@ a.nav-link{
 ──────────────────*/
 
 #projects{
-	margin-top:100px;
-    height: 100%;
+	margin-top:200px;
+    height: 200%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -425,26 +425,26 @@ hr {
 
 /* CSS for Fun Facts section */
 #FunFacts {
-	text-align: center; /* Center-align the content */
-	padding: -1px;
-  }
-  
-  /* CSS for individual fun facts */
-  .fun-facts-container {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	flex-wrap: wrap;
-	gap: 0px;
-  }
-  
-  .fun-fact {
-	text-align: center;
-	background-color: #ffffff;
-	padding: 20px;
-	border-radius: 10px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
+  text-align: center; /* Center-align the content */
+  padding: 0px;
+}
+
+/* CSS for individual fun facts */
+.fun-facts-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1px;
+}
+
+.fun-fact {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 
 .fun-fact img {
   width: 170px; /* Adjust the size as needed */
@@ -460,6 +460,4 @@ hr {
     font-size: 50px; /* Adjust the size as needed */
   font-weight: 700; /* Use a higher numeric value for more boldness */
 }
-
-
 
