@@ -425,26 +425,26 @@ hr {
 
 /* CSS for Fun Facts section */
 #FunFacts {
-  text-align: center; /* Center-align the content */
-  padding: 0px;
-}
-
-/* CSS for individual fun facts */
-.fun-facts-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0px;
-}
-
-.fun-fact {
-  text-align: center;
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
+	text-align: center; /* Center-align the content */
+	padding: 5px;
+  }
+  
+  /* CSS for individual fun facts */
+  .fun-facts-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 1px;
+  }
+  
+  .fun-fact {
+	text-align: center;
+	background-color: #ffffff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
 
 .fun-fact img {
   width: 170px; /* Adjust the size as needed */
